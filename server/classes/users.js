@@ -29,7 +29,7 @@ class Users {
 
     deletePerson( id ) {
         const personRemoved = this.getPerson( id );
-        this.persons = this.persons.filter( p =>  p.id !== id );
+        this.persons = this.persons.filter( p =>  p.id != id );
 
         return personRemoved;
     }
